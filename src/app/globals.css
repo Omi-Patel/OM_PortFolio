@@ -12,6 +12,27 @@
   display: none;
 }
 
+body::-webkit-scrollbar {
+  display: block;
+  width: 6px;
+  background-color: #0f204d;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #a1f3fcea;
+  border-radius: 50px;
+}
+
+.customScroll::-webkit-scrollbar {
+  display: block;
+  width: 6px;
+  background-color: #0f204d;
+}
+
+.customScroll::-webkit-scrollbar-thumb {
+  background-color: #a1f3fcea;
+  border-radius: 50px;
+}
+
 .right {
   background-image: url("https://res.cloudinary.com/dzg2xzsdm/image/upload/v1716871034/my_photo_ddfczq.jpg");
   background-position: center;
@@ -21,7 +42,11 @@
   width: 400px;
   box-shadow: 0 20px 5px 5px rgba(0, 0, 0, 0.2);
   animation: animate 5s ease-in-out infinite;
-  mask-image: linear-gradient(to bottom, rgb(5, 232, 126), rgba(10, 218, 255, 0.381));
+  mask-image: linear-gradient(
+    to bottom,
+    rgb(5, 232, 126),
+    rgba(10, 218, 255, 0.381)
+  );
 }
 
 @media screen and (max-width: 768px) {
@@ -34,7 +59,6 @@
     width: 230px;
     box-shadow: 0 10px 5px 5px rgba(0, 0, 0, 0.2);
     animation: animate 5s ease-in-out infinite;
-    
   }
 }
 
