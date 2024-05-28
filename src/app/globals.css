@@ -2,32 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.no-visible-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.no-visible-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.right {
+  background-image: url("https://res.cloudinary.com/dzg2xzsdm/image/upload/v1716871034/my_photo_ddfczq.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  width: 400px;
+  box-shadow: 0 20px 5px 5px rgba(0, 0, 0, 0.2);
+  animation: animate 5s ease-in-out infinite;
+  mask-image: linear-gradient(to bottom, rgb(5, 232, 126), rgba(10, 218, 255, 0.381));
+}
+
+@media screen and (max-width: 768px) {
+  .right {
+    background-image: url("https://res.cloudinary.com/dzg2xzsdm/image/upload/v1716871034/my_photo_ddfczq.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 230px;
+    width: 230px;
+    box-shadow: 0 10px 5px 5px rgba(0, 0, 0, 0.2);
+    animation: animate 5s ease-in-out infinite;
+    
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+@keyframes animate {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   }
 }
