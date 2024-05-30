@@ -1,20 +1,49 @@
 "use client";
-import React, { FormEvent, useState } from "react";
+import React, { FormEvent, useRef, useState } from "react";
 import { BackgroundBeams } from "../../../components/ui/background-beams";
 import { Button } from "@/components/ui/moving-border";
+import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export function BackgroundBeamsDemo() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const form = useRef(null);
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    if(email == "" || message == ""){
-      return alert("All Fields Are Required!!!")
+
+    if (email == "" || message == "") {
+      return toast.error("All Fields Are Required!!!");
     }
-    console.log("Submitted:", { email, message });
-    setEmail("");
-    setMessage("");
+    // console.log("Submitted:", { email, message });
+
+    try {
+      emailjs
+        .sendForm(
+          "om-patel.com",
+          "om_portfolio",
+          form.current as unknown as HTMLFormElement,
+          "V1mcZHxH3lgu1mEzs"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            toast.success("Message Sent Successfully !");
+            setEmail("");
+            setMessage("");
+          },
+          (error) => {
+            console.log(error);
+            toast.error("Try Again !");
+          }
+        );
+
+      //end
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (
@@ -39,8 +68,14 @@ export function BackgroundBeamsDemo() {
             hello, don't hesitate to reach out to us. Your input helps us
             continually improve and innovate our services.
           </p>
-          <form onSubmit={handleSubmit} className="space-y-4 mt-4">
+          <form
+            ref={form}
+            onSubmit={handleSubmit}
+            action=""
+            className="space-y-4 mt-4"
+          >
             <input
+              name="email"
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -49,6 +84,7 @@ export function BackgroundBeamsDemo() {
               required
             />
             <textarea
+              name="message"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               placeholder="Your Message"
@@ -63,6 +99,7 @@ export function BackgroundBeamsDemo() {
               
             </button> */}
             <Button
+              type="submit"
               onClick={handleSubmit}
               borderRadius="1.75rem"
               className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800 font-medium tracking-wider"
@@ -73,6 +110,18 @@ export function BackgroundBeamsDemo() {
         </div>
       </div>
       <BackgroundBeams />
+      <ToastContainer
+        position="bottom-right"
+        autoClose={1500}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
     </div>
   );
 }
