@@ -12,7 +12,7 @@ import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
 
 export function ThreeDCardDemo({ title, description, url, imgSrc }: any) {
   return (
-    <CardContainer className="inter-var sm:w-[26rem] w-[20rem] h-[18rem] sm:h-[22rem] ">
+    <CardContainer className="inter-var sm:w-[26rem] w-[18rem] h-[16rem] sm:h-[22rem] ">
       <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-green-500/30 border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  shadow-sm shadow-green-500/30">
         <CardItem
           translateZ="50"

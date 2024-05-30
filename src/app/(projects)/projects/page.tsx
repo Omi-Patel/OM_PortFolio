@@ -16,7 +16,7 @@ const page = () => {
 
   return (
     <>
-      <TracingBeam className="min-h-screen ">
+      <TracingBeam className="min-h-screen relative">
         <div className="min-h-screen mt-48 sm:mt-28 ">
           {/* <h1 className="text-center text-3xl py-4">BEST PROJECTS!</h1> */}
           <h1 className="mt-6 sm:text-3xl text-2xl  font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-neutral-50 to-green-400/40 bg-opacity-50 py-4">

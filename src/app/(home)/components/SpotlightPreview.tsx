@@ -32,7 +32,7 @@ export function SpotlightPreview() {
             </span>{" "}
             <br />
           </h1>
-          <div className="mt-6 text-center  tracking-wider  mx-auto font-normal text-neutral-600 dark:text-neutral-400">
+          <div className="mt-6 text-center sm:p-1 p-3  tracking-wider  mx-auto font-normal text-neutral-600 dark:text-neutral-400">
             <FlipWords words={words} /> <br />
           </div>
           <div className="mt-10 tracking-wider  text-neutral-300/80 max-w-3xl text-center mx-auto capitalize ">
