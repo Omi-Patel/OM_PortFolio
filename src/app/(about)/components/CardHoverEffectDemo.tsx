@@ -1,6 +1,11 @@
+"use client"
+import { useEffect } from "react";
 import { HoverEffect } from "../../../components/ui/card-hover-effect";
 
 export function CardHoverEffectDemo() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="max-w-5xl mx-auto px-8">
       <HoverEffect items={projects} />

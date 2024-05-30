@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect } from "react";
+import React from "react";
 import { TabsDemo } from "../components/TabsDemo";
 import { BentoGridDemo } from "../components/BentoGridDemo";
 import { ThreeDCardDemo } from "../components/ThreeDCardDemo";
@@ -9,10 +9,6 @@ import Certification from "../components/Certification";
 
 const page = () => {
   // console.log(projects, "PROJECTS");
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
 
   return (
     <>

@@ -26,7 +26,7 @@ export function SpotlightPreview() {
             Hello, Developers..!
           </h3>
           <h1 className="mt-6 text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-neutral-50 to-green-400/40 bg-opacity-50 ">
-            I'm Om{" "}
+            I&apos;m Om{" "}
             <span className="space-y-0 border-b-4 border-b-green-400">
               Patel
             </span>{" "}

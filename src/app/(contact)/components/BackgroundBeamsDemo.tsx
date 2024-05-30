@@ -1,5 +1,5 @@
 "use client";
-import React, { FormEvent, useRef, useState } from "react";
+import React, { FormEvent, useEffect, useRef, useState } from "react";
 import { BackgroundBeams } from "../../../components/ui/background-beams";
 import { Button } from "@/components/ui/moving-border";
 import emailjs from "@emailjs/browser";
@@ -46,6 +46,10 @@ export function BackgroundBeamsDemo() {
     }
   };
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="h-[47rem] sm:h-[38rem] w-full rounded-md bg-neutral-950 relative flex flex-col items-center justify-center antialiased overflow-hidden">
       <div className="mt-20 sm:mt-8 relative">
@@ -65,7 +69,7 @@ export function BackgroundBeamsDemo() {
           </h1>
           <p className="text-neutral-400 max-w-lg mx-auto my-1 text-sm text-center">
             Whether you have feedback, special requests, or simply want to say
-            hello, don't hesitate to reach out to us. Your input helps us
+            hello, don&apos;t hesitate to reach out to us. Your input helps us
             continually improve and innovate our services.
           </p>
           <form

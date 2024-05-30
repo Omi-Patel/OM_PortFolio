@@ -1,8 +1,13 @@
+"use client";
 import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 
 const Certification = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const content = [
     {
       title: "Frontend Developer (React)",

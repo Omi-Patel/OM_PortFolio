@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/moving-border";
 import { TypewriterEffectSmooth } from "@/components/ui/typewriter-effect";
 import Link from "next/link";
-import React, { useEffect } from "react";
+import React from "react";
 import { CardHoverEffectDemo } from "../components/CardHoverEffectDemo";
 import { CardHoverReveal } from "../components/CardHoverReveal";
 import Education from "../components/Education";
@@ -17,9 +17,7 @@ const page = () => {
     },
   ];
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  
   return (
     <div className="h-full mt-48 sm:mt-20">
       <div className="about flex flex-col-reverse justify-center sm:flex-row  h-full m-4 sm:p-20 sm:mx-10">
@@ -33,10 +31,10 @@ const page = () => {
             {/* Main Content */}
             <div>
               <h1 className="font-bold text-[17px] sm:text-xl tracking-wider text-gray-300">
-                I'm a Full stack developer with a passion for building top-notch
-                websites. I've a solid understanding of both Frontend and
-                Backend development and I can't wait to utilize my skills in the
-                workplace. I'm a quick learner and am certain that I can be a
+                I&apos;m a Full stack developer with a passion for building top-notch
+                websites. I&apos;ve a solid understanding of both Frontend and
+                Backend development and I can&apos;t wait to utilize my skills in the
+                workplace. I&apos;m a quick learner and am certain that I can be a
                 valueable asset to any web development team.
               </h1>
             </div>
