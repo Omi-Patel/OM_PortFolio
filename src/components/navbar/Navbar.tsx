@@ -24,7 +24,6 @@ const Navbar = () => {
             </Link>
           </nav>
           <a className="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-white lg:items-center lg:justify-center mb-4 md:mb-0">
-            
             <span className="ml-3 text-xl xl:block lg:hidden">
               <h1 className="font-bold text-xl tracking-widest text-center text-white relative z-20">
                 JavaScriptor.
@@ -50,13 +49,36 @@ const Navbar = () => {
           {/* resume button  */}
 
           <div className="lg:w-2/5 mt-4 sm:mt-0 inline-flex lg:justify-end ml-5 lg:ml-0">
-            <HoverBorderGradient
-              containerClassName="rounded-full"
-              as="button"
-              className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2"
+            <Link
+              target="_blank"
+              href={
+                "https://drive.google.com/file/d/14fy5XIzy9khy9lMMxhe-nP-g_T7wUwVI/view?usp=sharing"
+              }
             >
-              <span>RESUME</span>
-            </HoverBorderGradient>
+              <HoverBorderGradient
+                containerClassName="rounded-full"
+                as="button"
+                className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2"
+              >
+                <div className="flex justify-center items-center gap-1">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      className="size-5"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M15.75 2.25H21a.75.75 0 0 1 .75.75v5.25a.75.75 0 0 1-1.5 0V4.81L8.03 17.03a.75.75 0 0 1-1.06-1.06L19.19 3.75h-3.44a.75.75 0 0 1 0-1.5Zm-10.5 4.5a1.5 1.5 0 0 0-1.5 1.5v10.5a1.5 1.5 0 0 0 1.5 1.5h10.5a1.5 1.5 0 0 0 1.5-1.5V10.5a.75.75 0 0 1 1.5 0v8.25a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V8.25a3 3 0 0 1 3-3h8.25a.75.75 0 0 1 0 1.5H5.25Z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                  <span>RESUME</span>
+                </div>
+              </HoverBorderGradient>
+            </Link>
           </div>
         </div>
       </header>

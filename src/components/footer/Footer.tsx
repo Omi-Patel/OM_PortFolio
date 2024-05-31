@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Footer = () => {
@@ -7,10 +8,10 @@ const Footer = () => {
         <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
           <a className="flex title-font font-medium items-center md:justify-start justify-center text-white">
             <span className="ml-3 text-xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-neutral-50 to-green-400/40 bg-opacity-50">
-                OM{" "}
-                <span className="space-y-0 border-b-2 border-b-green-400">
-                  PATEL
-                </span>{" "}
+              OM{" "}
+              <span className="space-y-0 border-b-2 border-b-green-400">
+                PATEL
+              </span>{" "}
             </span>
           </a>
           <p className="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">
@@ -25,19 +26,7 @@ const Footer = () => {
             </a>
           </p>
           <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-            <a className="text-gray-400">
-              <svg
-                fill="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                className="w-5 h-5"
-                viewBox="0 0 24 24"
-              >
-                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-              </svg>
-            </a>
-            <a className="ml-3 text-gray-400">
+            {/* <a className="ml-3 text-gray-400">
               <svg
                 fill="currentColor"
                 strokeLinecap="round"
@@ -79,7 +68,13 @@ const Footer = () => {
                 ></path>
                 <circle cx="4" cy="4" r="2" stroke="none"></circle>
               </svg>
-            </a>
+            </a> */}
+
+            <Link href={"https://bento.me/om-patel"} target="_blank">
+              <span className="text-white bg-slate-500 p-2  rounded-full">
+                Connect With Me !
+              </span>
+            </Link>
           </span>
         </div>
       </footer>
