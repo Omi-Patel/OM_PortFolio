@@ -19,7 +19,7 @@ const page = () => {
 
   
   return (
-    <div className="h-full mt-48 sm:mt-20">
+    <div className="min-h-screen mt-48 sm:mt-20">
       <div className="about flex flex-col-reverse justify-center sm:flex-row  h-full m-4 sm:p-20 sm:mx-10">
         <div className="left w-full sm:w-[65%] ">
           <div className=" sm:m-8 p-4">
@@ -87,7 +87,7 @@ const page = () => {
       {/* Education */}
       <div className="  m-4 p-4">
         <h1 className="mt-6 py-2 text-4xl md:text-5xl text-center font-sans font-bold bg-clip-text text-transparent bg-gradient-to-r from-neutral-50 to-blue-400/40 bg-opacity-50 capitalize">
-          EDUCATIONS..!
+          Educations..!
         </h1>
         <Education />
       </div>

@@ -51,8 +51,8 @@ export function BackgroundBeamsDemo() {
   }, []);
 
   return (
-    <div className="h-[47rem] sm:h-[38rem] w-full rounded-md bg-neutral-950 relative flex flex-col items-center justify-center antialiased overflow-hidden">
-      <div className="mt-20 sm:mt-8 relative">
+    <div className="h-[47rem] sm:h-[44rem] w-full rounded-md bg-neutral-950 relative flex flex-col items-center justify-center antialiased overflow-hidden">
+      <div className="mt-20 sm:mt-0 relative">
         {" "}
         {/* Ensure the container is relative */}
         {/* BackgroundBeams with adjusted z-index */}
