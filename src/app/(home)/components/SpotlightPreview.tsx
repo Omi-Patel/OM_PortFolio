@@ -14,25 +14,22 @@ export function SpotlightPreview() {
 
   return (
     <div className="h-[50rem] w-full dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex items-center justify-center">
-      <Spotlight
-        className="-top-40 left-0 md:left-60 md:-top-20"
-        fill="white"
-      />
+      <Spotlight className="-top-40 left-0 md:left-60 md:-top-20" fill="cyan" />
 
       {/* inside  */}
       <div className="h-[50rem] w-full rounded-md flex md:items-center md:justify-center antialiased bg-grid-white/[0.02] relative overflow-hidden ">
         <div className=" p-4 max-w-7xl  mx-auto relative z-10  w-full pt-20 md:pt-0 ">
-          <h3 className="mt-32 sm:mt-0 text-center font-medium text-xl tracking-wider">
+          <h3 className="mt-32 sm:mt-0 text-center text-black dark:text-white font-medium text-xl tracking-wider">
             Hello, Developers..!
           </h3>
-          <h1 className="mt-6 text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-neutral-50 to-green-400/40 bg-opacity-50 ">
+          <h1 className="mt-6 text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-black to-green-400/40 bg-opacity-50 dark:from-neutral-50 dark:to-green-400/40">
             I&apos;m Om{" "}
             <span className="space-y-0 border-b-4 border-b-green-400">
               Patel
             </span>{" "}
             <br />
           </h1>
-          
+
           <div className="mt-10 sm:mt-10 tracking-wider  text-neutral-300/80 max-w-3xl text-center mx-auto capitalize ">
             <TextGenerateEffect words={intro} />
           </div>
@@ -46,7 +43,7 @@ export function SpotlightPreview() {
             <Link href={"/about"}>
               <Button
                 borderRadius="1.75rem"
-                className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800 font-medium tracking-wider"
+                className="bg-transparent dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800 font-medium tracking-wider"
               >
                 Know More!
               </Button>

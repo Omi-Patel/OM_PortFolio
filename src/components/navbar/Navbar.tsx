@@ -6,7 +6,7 @@ import { SparklesCore } from "../ui/sparkles";
 const Navbar = () => {
   return (
     <div>
-      <header className="text-gray-300 font-medium bg-gray-900/35 body-font fixed top-0 w-full shadow-md z-50 backdrop-filter backdrop-blur-lg bg-opacity-30">
+      <header className="text-gray-300 font-medium bg-gray-900 dark:bg-gray-900/35 body-font fixed top-0 w-full shadow-md z-50 dark:backdrop-filter dark:backdrop-blur-lg dark:bg-opacity-30">
         <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
           <nav className="flex lg:w-2/5 flex-wrap justify-center items-center text-base md:ml-auto ">
             <Link href={"/"} className="mr-6 hover:text-white">
