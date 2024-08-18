@@ -52,7 +52,7 @@ const Navbar = () => {
             <Link
               target="_blank"
               href={
-                "https://drive.google.com/file/d/14fy5XIzy9khy9lMMxhe-nP-g_T7wUwVI/view?usp=sharing"
+                "https://drive.google.com/file/d/1CuaE8NRT4Ey0ZZbc14TEUSswISjIyPxh/view?usp=sharing"
               }
             >
               <HoverBorderGradient

@@ -122,12 +122,12 @@ const items = [
     icon: <IconBoxAlignTopLeft className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "Animation Dev",
-    description: "SheryJS, an npm package for animations.",
+    title: "resumifyX",
+    description: "Developed a dynamic and user-friendly web application that allows users to create professional resumes with ease.",
     header: (
       <ItemImage
-        src="/Images/sheryjs.png"
-        href="https://sheryjsdev.netlify.app/"
+        src="/Images/resumifyX.png"
+        href="https://resumifyx.vercel.app/"
       />
     ),
     icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,

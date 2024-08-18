@@ -8,7 +8,7 @@ import portfolio from "../../../../public/Images/portfolio.jpg";
 import weather from "../../../../public/Images/weather.png";
 import rupee from "../../../../public/Images/MyRupee.png";
 import techy from "../../../../public/Images/techystar.png";
-import shery from "../../../../public/Images/sheryjs.png";
+import resumifyX from "../../../../public/Images/resumifyX.png";
 
 const data = {
   // Best Projects
@@ -206,10 +206,11 @@ const data = {
 
     {
       id: 11,
-      title: "Animation Dev",
-      description: "SheryJS, an npm package for animations.",
-      url: "https://sheryjsdev.netlify.app/",
-      imgSrc: shery,
+      title: "resumifyX",
+      description:
+        "Developed a dynamic and user-friendly web application that allows users to create professional resumes with ease.",
+      url: "https://resumifyx.vercel.app/",
+      imgSrc: resumifyX,
     },
   ],
 };
