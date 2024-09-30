@@ -9,6 +9,7 @@ import weather from "../../../../public/Images/weather.png";
 import rupee from "../../../../public/Images/MyRupee.png";
 import techy from "../../../../public/Images/techystar.png";
 import resumifyX from "../../../../public/Images/resumifyX.png";
+import retroUI from "../../../../public/Images/retroUI.png";
 
 const data = {
   // Best Projects
@@ -151,6 +152,24 @@ const data = {
         },
       ],
     },
+
+    {
+      id: 5,
+      title: "resumifyX",
+      description:
+        "Developed a dynamic and user-friendly web application that allows users to create professional resumes with ease.",
+      url: "https://resumifyx.vercel.app/",
+      imgSrc: resumifyX,
+    },
+
+    {
+      id: 6,
+      title: "retroUI",
+      description:
+        "Explore our Application UI components, designed for crafting dynamic web applications with versatile interface elements.",
+      url: "https://retro-ui-component.vercel.app/",
+      imgSrc: retroUI,
+    },
   ],
 
   // All Projects
@@ -202,15 +221,6 @@ const data = {
       description: "Small ReactJS Project to practice the Concepts.",
       url: "https://reactservice.netlify.app/",
       imgSrc: techy,
-    },
-
-    {
-      id: 11,
-      title: "resumifyX",
-      description:
-        "Developed a dynamic and user-friendly web application that allows users to create professional resumes with ease.",
-      url: "https://resumifyx.vercel.app/",
-      imgSrc: resumifyX,
     },
   ],
 };

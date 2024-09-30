@@ -38,7 +38,7 @@ const page = () => {
             })}
           </div>
 
-          <div>
+          {/* <div>
             <h1 className="mt-6 sm:text-3xl text-2xl  font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-neutral-50 to-green-400/40 bg-opacity-50 py-10">
               ALL{" "}
               <span className="space-y-0 border-b-4 border-b-green-400">
@@ -47,12 +47,12 @@ const page = () => {
               <br />
             </h1>
             <BentoGridDemo />
-          </div>
+          </div> */}
         </div>
       </TracingBeam>
 
       <div>
-        <h1 className="mt-2 sm:text-4xl text-2xl  font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-neutral-50 to-green-400/40 bg-opacity-50 sm:py-6 tracking-wide">
+        <h1 className="mt-4 sm:text-4xl text-2xl  font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-neutral-50 to-green-400/40 bg-opacity-50 sm:py-6 tracking-wide">
           CERTIFICATES !
           <br />
         </h1>

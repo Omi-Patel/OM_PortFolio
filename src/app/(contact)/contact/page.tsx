@@ -5,7 +5,7 @@ import { BackgroundBeamsDemo } from '../components/BackgroundBeamsDemo'
 const page = () => {
   
   return (
-    <div className='min-h-screen mt-20 sm:mt-12'>
+    <div className='min-h-screen mt-32 sm:mt-12'>
       <BackgroundBeamsDemo />
     </div>
   )
