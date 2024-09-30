@@ -13,7 +13,7 @@ export function SpotlightPreview() {
     "✨ As someone who is always passionate for learning more about tech and life. Ever since been a self taught software developer also unstopped learner. I have evolved into a Full Stack Javascript career path, and loves working with cutting edge tools and technologies🚀.";
 
   return (
-    <div className="h-[50rem] w-full dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex items-center justify-center">
+    <div className="min-h-screen w-full dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex items-center justify-center">
       <Spotlight className="-top-40 left-0 md:left-60 md:-top-20" fill="cyan" />
 
       {/* inside  */}
