@@ -10,6 +10,7 @@ import rupee from "../../../../public/Images/MyRupee.png";
 import techy from "../../../../public/Images/techystar.png";
 import resumifyX from "../../../../public/Images/resumifyX.png";
 import retroUI from "../../../../public/Images/retroUI.png";
+import saarthi from "../../../../public/Images/saarthi-engstudy.png";
 
 const data = {
   // Best Projects
@@ -169,6 +170,15 @@ const data = {
         "Explore our Application UI components, designed for crafting dynamic web applications with versatile interface elements.",
       url: "https://retro-ui-component.vercel.app/",
       imgSrc: retroUI,
+    },
+
+    {
+      id: 7,
+      title: "Saarthi_EngStudy",
+      description:
+        "A study material sharing platform with secure uploads, cloud storage, and a smooth user experience, powered by Next.js, MongoDB, and Vercel.",
+      url: "https://saarthi-engstudy.vercel.app/",
+      imgSrc: saarthi,
     },
   ],
 
